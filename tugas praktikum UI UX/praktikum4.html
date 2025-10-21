@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oyen - Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            background-color: #f8f8f8;
+            padding: 15px 30px;
+            border-bottom: 1px solid #ddd;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .profile-section {
+            display: flex;
+            padding: 30px;
+            gap: 30px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .profile-image {
+            width: 280px;
+            height: 280px;
+            flex-shrink: 0;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            background-color: #f0f0f0;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-info {
+            flex: 1;
+        }
+
+        .profile-name {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .info-item {
+            margin: 10px 0;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .info-item strong {
+            color: #333;
+        }
+
+        .info-item a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .info-item a:hover {
+            text-decoration: underline;
+        }
+
+        .categories {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            text-align: right;
+        }
+
+        .categories-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .categories p {
+            margin: 5px 0;
+            color: #666;
+        }
+
+        .description {
+            padding: 30px;
+            line-height: 1.8;
+            text-align: justify;
+            color: #444;
+            border-bottom: 1px solid #eee;
+        }
+
+        .description p {
+            margin-bottom: 15px;
+        }
+
+        .media-section {
+            display: flex;
+            padding: 30px;
+            gap: 20px;
+        }
+
+        .video-container {
+            flex: 1;
+        }
+
+        .video-container video {
+            width: 100%;
+            max-height: 400px;
+            border: 1px solid #ddd;
+            background-color: #000;
+        }
+
+        .gallery-container {
+            width: 320px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: #fafafa;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .gallery-item {
+            width: 100%;
+            aspect-ratio: 1;
+            border: 1px solid #ddd;
+            overflow: hidden;
+            background-color: #f0f0f0;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .social-media {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+
+        .social-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .social-links a {
+            color: #0066cc;
+            text-decoration: none;
+            padding: 5px 0;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .profile-section {
+                flex-direction: column;
+            }
+
+            .media-section {
+                flex-direction: column;
+            }
+
+            .gallery-container {
+                width: 100%;
+            }
+
+            .categories {
+                position: static;
+                text-align: left;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Muhammad Basyarahil - 0110225023
+        </div>
+        
+        <div class="profile-section" style="position: relative;">
+            <div class="profile-image">
+                <img src="../tugas praktikum UI UX/Screenshot 2025-10-21 092119.png" alt="oyensigma">
+            </div>
+            
+            <div class="profile-info">
+                <h1 class="profile-name">oyen</h1>
+                
+                <div class="info-item">jl jalan</div>
+                <div class="info-item">Depok</div>
+                <div class="info-item"><strong>Email:</strong> <a href="oyensigma@gmail.com">oyensigma@gmail.com</a></div>
+                <div class="info-item"><strong>Telephone:</strong> 0812345678910</div>
+            </div>
+
+            <div class="categories">
+                <div class="categories-title">Categories</div>
+                <p>Lorem Ipsum</p>
+                <p>dolor sit</p>
+                <p>metmet</p>
+            </div>
+        </div>
+        
+        <div class="description">
+            <p>oyenn adalah kucing pentolan di cibulan dia selalu ribut di kampung dengan kucing lain.</p>
+            
+            <p>10 Oktober adalah hari ulang tahun oyen.</p>
+        </div>
+        
+        <div class="media-section">
+            <div class="video-container">
+                <video controls>
+                    <source src="../tugas praktikum UI UX/snaptik_7498274155113139464_hd.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+            <div class="gallery-container">
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="../tugas praktikum UI UX/Screenshot 2025-10-21 140718.png" alt="1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../tugas praktikum UI UX/Screenshot 2025-10-21 140847.png" alt="2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../tugas praktikum UI UX/Screenshot 2025-10-21 140956.png" alt="3">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../tugas praktikum UI UX/Screenshot 2025-10-21 141034.png" alt="4">
+                    </div>
+                </div>
+                
+                <div class="social-media">
+                    <div class="social-title">Social Media</div>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/mhmmd_bsyrhl/" target="_blank">Instagram</a>
+                        <a href="https://www.youtube.com/channel/UCVugf9bu2kHkLGhKi7T4anw" target="_blank">Youtube</a>
+                        <a href="https://www.tiktok.com/@mhmmd_bsyarhl" target="_blank">Tiktok</a>
+                        <a href="https://x.com/mhmmd_bsyrhl_" target="_blank">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
