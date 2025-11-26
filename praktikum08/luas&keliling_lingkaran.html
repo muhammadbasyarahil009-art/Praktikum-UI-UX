@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menghitung Lingkaran</title>
+</head>
+<body>
+    <h2>Hitung Luas & Keliling Lingkaran</h2>
+
+    <label>Jari-jari: </label>
+    <input type="number" id="r"><br><br>
+
+    <button onclick="hitung()">Hitung</button>
+
+    <p id="hasil"></p>
+
+    <script>
+        function hitung() {
+            const PI = 3.14;
+            let r = document.getElementById("r").value;
+
+            let luas = PI * r * r;
+            let keliling = 2 * PI * r;
+
+            document.getElementById("hasil").innerHTML =
+                "Luas: " + luas + "<br>Keliling: " + keliling;
+        }
+    </script>
+</body>
+</html>
